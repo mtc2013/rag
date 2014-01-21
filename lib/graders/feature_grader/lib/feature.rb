@@ -132,6 +132,7 @@ class FeatureGrader < AutoGrader
           #exit_status = wait_thr.value
 
           lines = stdout.readlines
+          lines += stderr.readlines
           lines.each(&:chomp!)
           self.send :process_output, lines
         end

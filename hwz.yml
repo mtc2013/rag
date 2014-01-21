@@ -6,5 +6,11 @@ scenarios:
 features:
   - &step1-1
     FEATURE: features/test.feature
+    version: 2
     pass: true
+    desc: "results false"
+  - &step1-2
+    FEATURE: features/test.feature
+    version: 3
+    pass: false
     desc: "results false"
